@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>My first Laravel with GitHub project</h1>
+    <h1>My first project of Laravel and GitHub </h1>
     <p>So I'm very exicted to move on new journy</p>
 </body>
 </html>
