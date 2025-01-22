@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Task extends Model
 {
-    use HasFactory;
+    use HasFactory; 
+    protected $fillable = ['title', 'description', 'long_description'];
+    // its opposite of $fillable is $gaurded
+    // secret information like password should be gaurded
+    // protected $gaurded = [];
 }
