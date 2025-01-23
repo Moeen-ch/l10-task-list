@@ -7,6 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>Larave 10-task-list</title>
+    {{-- blade-formater-disable --}}
+    {{-- <style type="text/tailwindcss">
+        .btn{
+            @apply px-2 py-1 text-center font-medium text-slate-500 shadow-small ring-1 ring-slate-700/10 hover:bg-slate-50;
+        }
+    </style> --}}
+    {{-- blade-formater-unable --}}
+
     @yield('styles')
 </head>
 
