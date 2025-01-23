@@ -12,4 +12,9 @@ class Task extends Model
     // its opposite of $fillable is $gaurded
     // secret information like password should be gaurded
     // protected $gaurded = [];
+
+    public function toggelComplete(){
+        $this->completed = !$this->completed;
+        $this->save();
+    }
 }
