@@ -71,7 +71,6 @@ use Illuminate\Http\Request;
 //   ),
 //];
 
-
 Route::get('/', function () {
     return redirect()->route('tasks.index');
 });

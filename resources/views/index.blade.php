@@ -10,6 +10,7 @@
     </nav>
     @forelse ($tasks as $task)
         <div>
+            <span>→ </span>
             <a href="{{ route('tasks.show', ['task' => $task->id]) }}"
                 @class(['line-through'=>$task->completed])>{{ $task->title }}</a>
         </div>

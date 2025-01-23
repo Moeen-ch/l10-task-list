@@ -17,8 +17,11 @@
     {{-- blade-formater-unable --}}
 </head>
 
-<body class="container mx-auto mt-10 mb-10 max-w-lg">
-    <h1 class=" mb-4 text-2xl">@yield('title')</h1>
+<body class="container mx-auto mt-10 mb-10 max-w-lg bg-sky-500/10">
+    
+    <h1 class=" mb-4 text-2xl">
+        @yield('title')
+    </h1>
 
     <div x-data="{flash : true}">
         @if (session()->has('success'))
