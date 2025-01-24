@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'The list of tasks')
+@section('title', 'List of tasks')
 
 @section('content')
 
@@ -8,6 +8,7 @@
         <a href="{{ route('tasks.create') }}" 
         class="font-medium text-gray-700 underline decoration-pink-500">Add task</a>
     </nav>
+    
     @forelse ($tasks as $task)
         <div>
             <span>→ </span>

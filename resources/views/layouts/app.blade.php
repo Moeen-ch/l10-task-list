@@ -22,15 +22,16 @@
     <h1 class=" mb-4 text-2xl">
         @yield('title')
     </h1>
-
+    {{-- To handle flash message we use Alphine.js  --}}
     <div x-data="{flash : true}">
         @if (session()->has('success'))
             {{-- <div style="color: blue"></div> --}}
             <div x-show="flash" class="relative mb-10 rounded border border-green-400 bg-green-100 px-4 py-3 text-lg text-green-700"
                 role="alert">
                 <strong class="font-bold">Success!</strong>
-                <div>{{ session('success') }}</div>
+                <div>{{ session('success') }} </div> {{-- In which show the success message --}}
 
+                {{-- Code of flash message close, using Alpine.js --}}
                 <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                       stroke-width="1.5" @click="flash = false"
